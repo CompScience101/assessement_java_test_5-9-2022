@@ -1,7 +1,6 @@
 package main.src;
 
 import java.io.IOException; 
-import java.io.PrintWriter;
 import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
@@ -43,6 +42,7 @@ public class TransactionServlet extends HttpServlet {
 				  /*parse data*/
 				  JSONObject jsonObj1 = new JSONObject(data);
 				  cost = jsonObj1.getInt("cost");
+				  System.out.println("rewarded client "+cost+" total points");//test
 			  }catch(Exception ex){
 				  //send user the error
 				  response.setStatus(HttpServletResponse.SC_BAD_REQUEST);//Reply with error
@@ -62,7 +62,7 @@ public class TransactionServlet extends HttpServlet {
 					//	send user the error
 	                response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);//Reply to request with 400 http error
 	                try {
-						response.getWriter().print("Internal error, please try again later");
+						response.getWriter().print("{\"error\": Internal error, please try again later");
 						response.getWriter().close();
 					} catch (IOException e) {
 						// TODO Auto-generated catch block

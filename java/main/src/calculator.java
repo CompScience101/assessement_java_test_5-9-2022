@@ -11,7 +11,7 @@ public class calculator {
 			second = 0;
 		}
 		int total = first + second;
-		System.out.println("rewarded client "+total+" total points");
+		//System.out.println("rewarded client "+total+" total points");//test
 		if (total >= 1){
 			return total;
 		}
