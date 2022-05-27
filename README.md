@@ -3,12 +3,12 @@
 > My REST API to implement retailer's rewards program.
 
 ## Running java REST API without go docker container (option #1)
-#1) Pick a java web server like Apache Tomcat.
-#2) make sure java environment(1.5 version) is installed on your local machine
-#3) Create a folder that is named "assessment-java-5-9-2022" in the application section of your web server, for example if you are using
+1. Pick a java web server like Apache Tomcat.
+2. make sure java environment(1.5 version) is installed on your local machine
+3. Create a folder that is named "assessment-java-5-9-2022" in the application section of your web server, for example if you are using
     Apache Tomcat, then create the folder in the webapps folder.
-#4) Copy my files from my repository into the folder created in the previous step.
-#5) Run the java server and note the port that your java server is running on so that you can use it
+4. Copy my files from my repository into the folder created in the previous step.
+5. Run the java server and note the port that your java server is running on so that you can use it
     with the client requests.
    NOTE: you may need to allow this program in your OS's firewall to run it successfully, in Windows OS you may get a "Windows Security Alert" prompt,
    please make sure the public network checkbox is selected, then choose "Allow Access" button, then click "yes" if you are prompted to allow the program to 
@@ -16,12 +16,12 @@
 
 
 ## Unit Testing
-#1) copy my code(all files) to your local hard drive and to the java web server that you are testing my 
+1. copy my code(all files) to your local hard drive and to the java web server that you are testing my 
     application from.
-#2) make sure java environment(1.5 version) is installed on your local machine
-#3) open my project in your java IDE, make sure that the libraries are configured with the project, 
+2. make sure java environment(1.5 version) is installed on your local machine
+3. open my project in your java IDE, make sure that the libraries are configured with the project, 
     you can these libraries in the path "\WEB-INF\lib" of the "assessment-java-5-9-2022" project.
-#4) Then run the file titled "TestRunner.java"(this file is in the directory "/java/main/src" of the 
+4. Then run the file titled "TestRunner.java"(this file is in the directory "/java/main/src" of the 
     "assessment-java-5-9-2022" project), to run my unit test. If all is setup up correctly 
     all my test will pass and you will see the sentence "Printing testing class successful: true"
     on the IDE's console window screen. If you want different test input change the test case in the
