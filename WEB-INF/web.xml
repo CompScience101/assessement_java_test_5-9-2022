@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>assessment-java-5-9-2022</display-name>
+  
+   <display-name>Nicholas Donald's Java assessment</display-name>
+	<welcome-file-list>
+   <welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+  
+  <!--Main Servlet, for page request-->  
+  <servlet>
+    <description></description>
+    <display-name>MainServlet</display-name>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>main.src.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/</url-pattern> 
+  </servlet-mapping>
+<!--HealthServlet, for page request-->  
+  <servlet>
+    <description></description>
+    <display-name>HealthServlet</display-name>
+    <servlet-name>HealthServlet</servlet-name>
+    <servlet-class>main.src.HealthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HealthServlet</servlet-name>
+    <url-pattern>/api/health</url-pattern> 
+  </servlet-mapping>
+  <!--TransactionServlet, for page request-->  
+  <servlet>
+    <description></description>
+    <display-name>TransactionServlet</display-name>
+    <servlet-name>TransactionServlet</servlet-name>
+    <servlet-class>main.src.TransactionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransactionServlet</servlet-name>
+    <url-pattern>/api/transaction</url-pattern> 
+  </servlet-mapping>
+  <!--ThreemonthsummaryServlet, for page request-->  
+  <servlet>
+    <description></description>
+    <display-name>ThreemonthsummaryServlet</display-name>
+    <servlet-name>ThreemonthsummaryServlet</servlet-name>
+    <servlet-class>main.src.ThreemonthsummaryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ThreemonthsummaryServlet</servlet-name>
+    <url-pattern>/api/threemonthsummary</url-pattern> 
+  </servlet-mapping>
+</web-app>
