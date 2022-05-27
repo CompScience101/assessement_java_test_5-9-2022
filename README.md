@@ -64,14 +64,14 @@
 # Response sample
 # Code: 200
 # Content: [{
-#   "name": "john" 
-#   "pts": 150
+#   "name": "John" 
+#   "points": 150
 # },{
-#   "name": "fred" 
-#   "pts": 200
+#   "name": "Fred" 
+#   "points": 200
 # },{
-#   "name": "larry" 
-#   "pts": 300
+#   "name": "Larry" 
+#   "points": 300
 # }]
 ```
 
