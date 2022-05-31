@@ -71,6 +71,39 @@
 ```
 
 ### Get Member Points Summary (from past three months)
+data set:
+
+|John's monthly transactions| Month  | transaction #1 | transaction #2 | transaction #3 | transaction #4 | transaction #5 | transaction #6 | transaction #7 | monthly total |
+|-------|                   |--------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|---------------|
+|       |                   | month1 | 25             | 89             | 50             | 200            | 250            | 300            | 78             | 992           |	  
+|       |                   | month2 | 56             | 81             | 58             | 205            | 249            | 17             | 89             | 755           |
+|       |                   | month3 | 76             | 34             | 5              | 270            | 400            | 234            | 500            | 1519         |
+
+
+| John's three month total |
+|--------------------------|
+| 4043                     |
+
+|Fred's monthly transactions| Month  | transaction #1 | transaction #2 | transaction #3 | transaction #4 | transaction #5 | transaction #6 | transaction #7 | monthly total |
+|-------|                   |--------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|---------------|
+|       |                   | month1 | 55             | 50             | 50             | 700            | 440            | 210            | 46             | 1551          |	  
+|       |                   | month2 | 44             | 81             | 33             | 23             | 29             | 75             | 18             | 303           |
+|       |                   | month3 | 400            | 34             | 75             | 90             | 80             | 88             | 97             | 864           |
+
+| Fred's three month total |
+|--------------------------|
+| 3141                     |
+
+|Larry's monthly transactions| Month  | transaction #1 | transaction #2 | transaction #3 | transaction #4 | transaction #5 | transaction #6 | transaction #7 | monthly total |
+|-------|                    |--------|----------------|----------------|----------------|----------------|----------------|----------------|----------------|---------------|
+|       |                    | month1 |  602           | 399            | 123            | 278            | 75             | 108            | 62             | 1647          |	  
+|       |                    | month2 | 83             | 90             | 29             | 174            | 355            | 184            | 192            | 1107          |
+|       |                    | month3 | 11             | 875            | 621            | 76             | 51             | 56             | 59             | 1749          |
+
+| Larry's three month total |
+|---------------------------|
+| 6324                      |
+
 ``` bash
 # URL: api/threemonthsummary
 # Method:GET
