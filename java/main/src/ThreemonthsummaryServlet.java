@@ -44,16 +44,25 @@ public class ThreemonthsummaryServlet extends HttpServlet {
 				  JSONObject jsonObj1 = new JSONObject();//customer object
 				  jsonObj1.put("name", "John");//add key
 				  int points1 = 0;
+				  int monthlypoints1 = 0; 
 				  //calculate points
 				  for(int x=0; x<month1.length; x++){
 					  points1 = points1 + calculator.calc(month1[x]);
+					  monthlypoints1 = monthlypoints1 + calculator.calc(month1[x]);
 				  }
+				  System.out.println("John month1 points "+monthlypoints1);
+				  monthlypoints1 = 0;//reset
 				  for(int y=0; y<month2.length; y++){
 					  points1 = points1 + calculator.calc(month2[y]);
+					  monthlypoints1 = monthlypoints1 + calculator.calc(month2[y]);
 				  }
+				  System.out.println("John month2 points "+monthlypoints1);
+				  monthlypoints1 = 0;//reset
 				  for(int z=0; z<month3.length; z++){
 					  points1 = points1 + calculator.calc(month3[z]);
+					  monthlypoints1 = monthlypoints1 + calculator.calc(month3[z]);
 				  }
+				  System.out.println("John month3 points "+monthlypoints1);
 				  jsonObj1.put("points", points1);//add key
 				  arr.put(jsonObj1);//store customer
  				  // initailize data for past transactions json object
@@ -64,16 +73,25 @@ public class ThreemonthsummaryServlet extends HttpServlet {
 				  JSONObject jsonObj2 = new JSONObject();//customer object
 				  jsonObj2.put("name", "Fred");//add key
 				  int points2 = 0;
+				  int monthlypoints2 = 0;
 				  //calculate points
 				  for(int x=0; x<month4.length; x++){
 					  points2 = points2 + calculator.calc(month4[x]);
+					  monthlypoints2 = monthlypoints2 + calculator.calc(month4[x]);
 				  }
+				  System.out.println("Fred month1 points "+monthlypoints2);
+				  monthlypoints2 = 0;//reset
 				  for(int y=0; y<month5.length; y++){
 					  points2 = points2 + calculator.calc(month5[y]);
+					  monthlypoints2 = monthlypoints2 + calculator.calc(month5[y]);
 				  }
+				  System.out.println("Fred month2 points "+monthlypoints2);
+				  monthlypoints2 = 0;//reset
 				  for(int z=0; z<month6.length; z++){
 					  points2 = points2 + calculator.calc(month6[z]);
+					  monthlypoints2 = monthlypoints2 + calculator.calc(month6[z]);
 				  }
+				  System.out.println("Fred month3 points "+monthlypoints2);
 				  jsonObj2.put("points", points2);//add key
 				  arr.put(jsonObj2); //store customer
 				  // initailize data for past transactions json object
@@ -84,16 +102,25 @@ public class ThreemonthsummaryServlet extends HttpServlet {
 				  JSONObject jsonObj3 = new JSONObject();//customer object
 				  jsonObj3.put("name", "Larry");//add key
 				  int points3 = 0;
+				  int monthlypoints3 = 0;
 				  //calculate points
 				  for(int x=0; x<month7.length; x++){
 					  points3 = points3 + calculator.calc(month7[x]);
+					  monthlypoints3 = monthlypoints3 + calculator.calc(month7[x]);
 				  }
+				  System.out.println("Larry month1 points "+monthlypoints3);
+				  monthlypoints3 = 0;//reset
 				  for(int y=0; y<month8.length; y++){
 					  points3 = points3 + calculator.calc(month8[y]);
+					  monthlypoints3 = monthlypoints3 + calculator.calc(month8[y]);
 				  }
+				  System.out.println("Larry month2 points "+monthlypoints3);
+				  monthlypoints3 = 0;//reset
 				  for(int z=0; z<month9.length; z++){
 					  points3 = points3 + calculator.calc(month9[z]);
+					  monthlypoints3 = monthlypoints3 + calculator.calc(month9[z]);
 				  }
+				  System.out.println("Larry month3 points "+monthlypoints3);
 				  jsonObj3.put("points", points3);//add key
 				  arr.put(jsonObj3);//store customer
 				  response.setStatus(HttpServletResponse.SC_OK);				  // response status
