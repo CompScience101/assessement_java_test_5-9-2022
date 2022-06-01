@@ -110,14 +110,32 @@ data set:
 # Response sample
 # Code: 200
 # Content: [{
-#   "name": "John" 
-#   "points": 150
+#   "name": "John",
+#   "month1":[25,89,50,200,250,300,78],
+#   "month2":[56,81,58,205,249,17,89],
+#   "month3":[76,34,5,270,400,234,500],
+#   "month1_total_points": 1117,
+#   "month2_total_points": 692,
+#   "month1_total_points": 2234,
+#   "threemonthsummary_points": 4043
 # },{
-#   "name": "Fred" 
-#   "points": 200
+#   "name": "Fred" ,
+#   "month1":[55,50,50,700,440,210,46],
+#   "month2":[44,81,33,23,29,75,18],
+#   "month3":[400,34,75,90,80,88,97],
+#   "month2_total_points": 56,
+#   "month3_total_points": 830,
+#   "month1_total_points": 2255,
+#   "threemonthsummary_points": 3141
 # },{
-#   "name": "Larry" 
-#   "points": 300
+#   "name": "Larry", 
+#   "month1":[602,399,123,278,75,108,62],
+#   "month2":[83,90,29,174,355,184,192],
+#   "month3":[11,875,621,76,51,56,59],
+#   "month2_total_points": 1283,
+#   "month3_total_points": 2734,
+#   "month1_total_points": 2307,
+#   "threemonthsummary_points": 6324
 # }]
 ```
 
