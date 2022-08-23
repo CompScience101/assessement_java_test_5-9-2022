@@ -47,6 +47,7 @@
 # URL: api/health
 # Method: GET  
 # HTTP/1.1
+
 # Response sample
 # code: 200
 # content: {running: "true"}
@@ -107,6 +108,7 @@ data set:
 # URL: api/threemonthsummary
 # Method:GET
 # HTTP/1.1
+
 # Response sample
 # Code: 200
 # Content: [{
