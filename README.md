@@ -20,7 +20,7 @@
     application from.
 2. make sure java environment(1.5 version) is installed on your local machine
 3. open my project in your java IDE, make sure that the libraries are configured with the project, 
-    you can these libraries in the path "\WEB-INF\lib" of the "assessment-java-5-9-2022" project.
+    you can see these libraries in the path "\WEB-INF\lib" of my "assessment-java-5-9-2022" project.
 4. Then run the file titled "TestRunner.java"(this file is in the directory "/java/main/src" of the 
     "assessment-java-5-9-2022" project), to run my unit test. If all is setup up correctly 
     all my test will pass and you will see the sentence "Printing testing class successful: true"
